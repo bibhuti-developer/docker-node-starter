@@ -4,7 +4,7 @@
 `$ npm install`
 
 ### build the image
-`$ docker build -t <your username>/node-web-app .`
+`$ docker build -t <your username>/docker-node-starter .`
   
 ### Get container ID
 `$ docker ps`
@@ -15,10 +15,13 @@
 ### Enter the container
 `$ docker exec -it <container id> /bin/bash`
 
-### Running your image 
+### Running the image 
 * -d runs the container in detached mode, leaving the container running in the background. 
 * -p flag redirects a public port to a private port inside the container.  
 `$ docker run -p 49160:8080 -d <your username>/docker-node-starter`
 
+### Get the docker machine ip
+`docker-machine ip`
+
 ### Verify the result
-`$ curl -i localhost:49160`
+`$ curl -i <localhost>:49160`
