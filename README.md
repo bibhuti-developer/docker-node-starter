@@ -24,4 +24,4 @@
 `docker-machine ip`
 
 ### Verify the result
-`$ curl -i <localhost>:49160`
+`$ curl -i <docker-machine-ip>:49160`
